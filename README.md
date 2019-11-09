@@ -5,7 +5,7 @@ Some Arch Linux Pacman hooks I made
 
 **Check-Broken-Packages** - This checks for packages with broken (non satisfied) dynamic library dependencies. This can happen if you have installled package A from the AUR, which depends on B from the official repositories, and B gets updated, but the packager of A does not bump its pkgrel. In most case you simply need to rebuild A. (Based off https://github.com/desbma/pacman-hooks)
 
-**Orphans** - A post-transaction hook that searchs for orphaned packages.
+**Orphans** - A post-transaction hook that searches for orphaned packages.
 
 ## Other hooks
 1. [Pug](https://github.com/Ventto/pug) - An ALPM-hook to automatically save installed Pacman & AUR package lists into Gist files.
