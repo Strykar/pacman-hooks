@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Checking for missing dependencies in aur packages...
+Exec = /usr/bin/bash -c "if /usr/bin/check_broken_packages.sh = 0; then /usr/bin/echo '==> No broken aur dependencies found'; else /usr/bin/check_broken_packages.sh; fi"
+When = PostTransaction
