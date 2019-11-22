@@ -1,0 +1,14 @@
+[Trigger]
+
+Operation = Upgrade
+Type = Path
+Target = /usr/bin/perl /usr/bin/python2 /usr/bin/python3
+
+[Action]
+
+Description = Python or Perl version upgrade detected. rebuild-detector --> Please rebuild:
+Depends = rebuild-detector
+When = PostTransaction
+Exec = /usr/bin/checkrebuild
+
+# https://aur.archlinux.org/packages/rebuild-detector/
