@@ -7,6 +7,8 @@ Some Arch Linux Pacman hooks I made
 
 **Orphans** - A post-transaction hook that searches for orphaned packages.
 
+**py-perl-vercmp** - A post-transaction hook that searches installed packages with Perl or Python dependencies and lists them. It is triggered only if Perl or Python have had a version upgrade. Requires [rebuild-detector](https://aur.archlinux.org/packages/rebuild-detector/).
+
 ## Other hooks
 1. [Pug](https://github.com/Ventto/pug) - An ALPM-hook to automatically save installed Pacman & AUR package lists into Gist files.
 
