@@ -12,4 +12,4 @@ Description=Patch Nvidia encoder for multiple streams
 Depends=nvidia-utils
 When=PostTransaction
 NeedsTargets
-Exec=/bin/sh -c '/home/strykar/arch_packages/github/nvidia-patch/patch.sh -s'
+Exec=/bin/sh -c '/usr/share/nvidia-keylase/patch.sh -s'
