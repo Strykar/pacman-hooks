@@ -3,7 +3,10 @@ Operation=Install
 Operation=Upgrade
 Operation=Remove
 Type=Package
+Target=nvidia
 Target=nvidia-dkms
+# Change the driver version above to match yours, ex. nvidia-beta
+Target=linux
 Target=linux-zen
 # Change the linux part above and in the Exec line if a different kernel is used
 
