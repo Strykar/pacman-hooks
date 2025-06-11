@@ -10,3 +10,4 @@ Target = *
 Description = Searching for orphaned packages...
 When = PostTransaction
 Exec = /usr/bin/bash -c "/usr/bin/pacman -Qtd || /usr/bin/echo '==> no orphans found'"
+#Exec = /usr/bin/bash -c 'out=$(pacman --color=always -Qtd | awk "NF"); if [[ -n "$out" ]]; then printf "%s\n" "$out"; else echo "==> no orphans found"; fi'
